@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <com.ihandy.view.LightEditText
+            android:id="@+id/team1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/radius_all_dark_green"
+            android:gravity="center_vertical"
+            android:minHeight="48dp"
+            android:textColor="@color/lighter_yellow"
+            android:textSize="18dp" />
+
+        <com.ihandy.view.LightTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:text="VS"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+
+        <com.ihandy.view.LightEditText
+            android:id="@+id/team2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/radius_all_dark_green"
+            android:gravity="center_vertical"
+            android:minHeight="48dp"
+            android:textColor="@color/lighter_yellow"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="5dp">
+
+        <com.ihandy.view.LightTextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:background="@drawable/radius_all_dark_green"
+            android:gravity="center_vertical"
+            android:text="主队状态"
+            android:textColor="@color/lighter_yellow"
+            android:textSize="12dp" />
+
+        <com.weiwangcn.betterspinner.library.BetterSpinner
+            android:id="@+id/basic1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/lighter_yellow"
+            android:textSize="12dp"
+            android:layout_marginLeft="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="5dp">
+
+        <com.ihandy.view.LightTextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:background="@drawable/radius_all_dark_green"
+            android:gravity="center_vertical"
+            android:text="客队状态"
+            android:textColor="@color/lighter_yellow"
+            android:textSize="12dp" />
+
+        <com.weiwangcn.betterspinner.library.BetterSpinner
+            android:id="@+id/basic2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/lighter_yellow"
+            android:textSize="12dp"
+            android:layout_marginLeft="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="5dp">
+
+        <com.ihandy.view.LightTextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:background="@drawable/radius_all_dark_green"
+            android:gravity="center_vertical"
+            android:text="盘口"
+            android:textColor="@color/lighter_yellow"
+            android:textSize="12dp" />
+
+        <com.weiwangcn.betterspinner.library.BetterSpinner
+            android:id="@+id/handicap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/lighter_yellow"
+            android:textSize="12dp"
+            android:layout_marginLeft="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="5dp">
+
+        <com.ihandy.view.LightTextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:background="@drawable/radius_all_dark_green"
+            android:gravity="center_vertical"
+            android:text="赢球率"
+            android:textColor="@color/lighter_yellow"
+            android:textSize="12dp" />
+
+        <com.weiwangcn.betterspinner.library.BetterSpinner
+            android:id="@+id/ratio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/lighter_yellow"
+            android:textSize="12dp"
+            android:layout_marginLeft="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="5dp">
+
+        <com.ihandy.view.LightTextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:background="@drawable/radius_all_dark_green"
+            android:gravity="center_vertical"
+            android:text="历史战绩"
+            android:textColor="@color/lighter_yellow"
+            android:textSize="12dp" />
+
+        <com.weiwangcn.betterspinner.library.BetterSpinner
+            android:id="@+id/history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/lighter_yellow"
+            android:textSize="12dp"
+            android:layout_marginLeft="5dp" />
+
+    </LinearLayout>
+
+
+
+
+
+    <EditText
+        android:id="@+id/txt_gen"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="150dp"
+        android:hint="推荐内容生成区域可编辑..."
+        android:textColorHint="@android:color/white"
+        android:textColor="@color/lighter_yellow"
+        android:textSize="15dp"
+        android:background="@drawable/radius_all_dark_green"/>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <com.ihandy.view.LightTextView
+            android:id="@+id/btn_gen"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/radius_all_dark_green"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:text="生成"
+            android:textColor="@color/lighter_yellow"
+            android:textSize="18dp" />
+
+        <com.ihandy.view.LightTextView
+            android:id="@+id/btn_copy"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/radius_all_dark_green"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:text="拷贝"
+            android:textColor="@color/lighter_yellow"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

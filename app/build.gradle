@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.ihandy.jc"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        //突破65535的限制
+        multiDexEnabled true
+    }
+
+    productFlavors {
+
+        sit {
+            applicationId "com.cpic.sxbxxesit"
+            versionCode 1
+            versionName "1"
+        }
+    }
+
+
+    lintOptions {
+
+        // if true, stop the gradle build if errors are found
+        abortOnError false
+        // if true, only report errors
+    }
+
+
+    //签名配置
+    signingConfigs {
+        debug{
+            storeFile file('debug.keystore')
+        }
+        releaseConfig {
+            keyAlias 'cpic'
+            keyPassword '123456'
+            storeFile file('cpickeystore')
+            storePassword '123456'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false //混淆
+            //shrinkResources false //移除无用的resource文件
+            //proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.cfg'
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.releaseConfig
+        }
+    }
+}
+
+dependencies {
+
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.weiwangcn.betterspinner:library:1.1.0'
+    compile 'com.zhy:percent-support-extends:1.1.1@aar'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    compile project(':cpicmobshare')
+}

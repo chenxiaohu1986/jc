@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>demo</title>
+	<script src="js/jquery-1.7.2.min.js"></script>
+
+	<script>
+
+
+		alert(123);
+
+	    $("#text1").live('click',function(){
+
+			var url = "http://op.juhe.cn/onebox/weather/query";
+			var param = "cityname=%E6%B8%A9%E5%B7%9E&dtype=&key=de0a796eb41046b10afc46be9c74f756";
+			var timeout = 10*1000;
+			var contentType = "text/plain";
+			var key = "key_xx"
+    		cpic.post(url,param,timeout,contentType,key,"success","success");
+
+
+
+    	});
+
+    	window.success = function (data){
+			$("#text1").html(data);
+
+    		//alert(data);
+    	}
+
+
+
+
+
+	</script>
+
+</head>
+<body>
+
+
+	<p id="text1"> xxx  </p>
+
+
+</body>
+
+
+
+
+
+</html>

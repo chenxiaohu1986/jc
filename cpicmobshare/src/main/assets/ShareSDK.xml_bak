@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DevInfor>
+
+    <ShareSDK AppKey="4f6563a45988" />
+    
+<!--      <ShortMessage
+        Enable="true"
+        Id="0"
+        SortId="0" /> -->
+    
+    <Wechat
+        AppId="wxb54769d33fe19505"
+        AppSecret="7d83dd38bc4ae5008be895f2b1774d36"
+        BypassApproval="false"
+        Enable="true"
+        Id="0"
+        SortId="0" />
+
+    <WechatMoments
+        AppId="wxb54769d33fe19505"
+        AppSecret="7d83dd38bc4ae5008be895f2b1774d36"
+        BypassApproval="false"
+        Enable="true"
+        Id="1"
+        SortId="1" />
+
+   
+</DevInfor>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:orientation="vertical"
+    android:background="@android:color/darker_gray">
+
+    <com.ihandy.view.LightTextView
+        android:id="@+id/txt365"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="滚球365"
+        android:gravity="center_vertical"
+        android:textSize="18dp"
+        android:textColor="@color/lighter_yellow"
+        android:background="@drawable/radius_all_dark_green"/>
+
+
+    <com.ihandy.view.LightTextView
+        android:id="@+id/cmp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="CMP"
+        android:gravity="center_vertical"
+        android:textSize="18dp"
+        android:textColor="@color/lighter_yellow"
+        android:background="@drawable/radius_all_dark_green"/>
+
+
+    <com.ihandy.view.LightTextView
+        android:id="@+id/generate"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="推荐文本生成"
+        android:gravity="center_vertical"
+        android:textSize="18dp"
+        android:textColor="@color/lighter_yellow"
+        android:background="@drawable/radius_all_dark_green"/>
+
+
+</LinearLayout>

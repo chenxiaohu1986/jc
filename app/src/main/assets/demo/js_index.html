@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>demo</title>
+	<link rel="stylesheet" href="css/main.css" />
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/main.js"></script>
+
+
+
+</head>
+<body>
+
+	<div id="text1"> xxx  </div>
+
+
+
+	<div class="wrap">
+	</div>
+</body>
+
+
+
+<script>
+
+		 function writeLine(text)
+    	{
+       		alert(text);
+    	}
+
+    	function question(text){
+    	   this.obj=JSON.parse(text);
+           $dom="<div class='question'>"
+     		+"<a class='questionIcon headerImg'>"
+     		+"<img src='img/question.png' alt=''>"
+     		+"</a>"
+     		+"<div class='questionContent'>"
+     		+"<p>"+obj.content+"</p>"
+     		+"</div>"
+     	    +"</div>";
+           $(".wrap").append($dom);
+           var scrollHeight=$(".wrap").height();
+           $(document).scrollTop(scrollHeight);
+       }
+
+       function answer(text){
+           this.obj=JSON.parse(text);
+           obj.src=obj.url?"<img src='"+obj.url+"'>":'';
+           $dom="<div class='reason'>"
+     		+"<a class='reasonIcon headerImg'>"
+     		+"<img src='img/reason.png' alt=''>"
+     		+"</a>"
+            +"<div class='reasonContent'>"
+            +"<p>"+obj.content+obj.src+"</p>"
+            +"</div>"
+     	    +"</div>";
+           $(".wrap").append($dom);
+           var scrollHeight=$(".wrap").height();
+           $(document).scrollTop(scrollHeight);
+       }
+
+        function showToast(text)
+    	{
+    		alert(111);
+			//wx.show(text);
+    	}
+
+    	//alert($("#text1"));
+
+    	$("#text1").click(function(){
+    		//alert(111);
+    		//wx.show('js调用');
+    		stopRecord();
+    	});
+
+
+    	function stopRecord(){
+    		alert(111);
+    		wx.stopRecord({
+				success: function (res) {
+					var localId = res.localId;
+				}
+			});
+    	}
+
+
+
+
+	</script>
+
+
+</html>
