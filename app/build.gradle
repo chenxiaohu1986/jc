@@ -65,5 +65,4 @@ dependencies {
     compile 'com.weiwangcn.betterspinner:library:1.1.0'
     compile 'com.zhy:percent-support-extends:1.1.1@aar'
     compile 'com.loopj.android:android-async-http:1.4.9'
-    compile project(':cpicmobshare')
 }
