@@ -12,14 +12,29 @@ android {
         versionName "1.0"
         //突破65535的限制
         multiDexEnabled true
+        manifestPlaceholders = [
+                app_name                : "jc365"
+        ]
     }
 
     productFlavors {
 
-        sit {
-            applicationId "com.cpic.sxbxxesit"
+        dd {
+            applicationId "com.cpic.dd"
             versionCode 1
             versionName "1"
+            manifestPlaceholders = [
+                    app_name                : "dd365"
+            ]
+        }
+
+        cmg {
+            applicationId "com.cpic.cmg"
+            versionCode 1
+            versionName "1"
+            manifestPlaceholders = [
+                    app_name                : "cmg365"
+            ]
         }
     }
 
@@ -34,9 +49,6 @@ android {
 
     //签名配置
     signingConfigs {
-        debug{
-            storeFile file('debug.keystore')
-        }
         releaseConfig {
             keyAlias 'cpic'
             keyPassword '123456'
@@ -62,7 +74,4 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.jakewharton:butterknife:7.0.1'
-    compile 'com.weiwangcn.betterspinner:library:1.1.0'
-    compile 'com.zhy:percent-support-extends:1.1.1@aar'
-    compile 'com.loopj.android:android-async-http:1.4.9'
 }
